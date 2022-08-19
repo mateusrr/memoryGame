@@ -54,3 +54,19 @@ body {
 .card.flip {
     transform: rotateY(180deg);
 }
+
+@media (max-width: 506px) {
+    .card {
+        width: 30%;
+        height: 35%;
+        display: flex;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: 30%;
+        height: 30%;
+        display: flex;
+    }
+}
