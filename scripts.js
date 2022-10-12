@@ -2,6 +2,7 @@ const cards = document.querySelectorAll('.card')
 let hasFlippedCard = false
 let firstCard, secondCard
 let lockBoard = false
+let i = 10;
 
 function flipCard() {
     if(lockBoard) return
@@ -14,6 +15,7 @@ function flipCard() {
         return
     }
 
+    
     secondCard = this
     hasFlippedCard = false
     checkForMath()
@@ -58,7 +60,7 @@ function resetBoard() {
     })
 })()
 
+
 cards.forEach((card) => {
     card.addEventListener('click', flipCard)
 })
-
